@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyUnicorn</title>
     <style>
+        /*enlever tous les petits marges*/
         *{
             padding: 0;
             margin: 0;
@@ -39,35 +40,51 @@
       .titre-header{
           float:right;
           height: 100%;
-          font-size: 7;
-          padding: 15px 15px;
+          font-size: 13px;
+          padding: 16px 15px;
           margin-right:3px;
           cursor: pointer;
       }
       .titre-header:hover{
           background-color: #EB43A3;
-          box-shadow: 3px 3px 3px 0px  rgba(197,83,148,0.8);
+          box-shadow: 0px 1px 0px 1px  rgba(197,110,150,0.8);
 
       }
       .titre-header a{
           text-decoration: none;
           color: #fff;
       }
+                      /*le contenu commence ici*/
+
       body{
           background-image: url(img/background.png);
+      }
+      .en_tete{
+          border: 1px solid black;
+      }
+     .en_tete h1{
+         background-image: url(img/rainbow.png);
+        font-family: 'Courgette', cursive;
+        color: #C55394;
+        font-size: 23px ;
+        font-style: italic;
+        width: fit-content;
+        padding: 4% 13% 1.5% 13%;
+        margin-left: 30%;
       }
       footer{
           position: absolute;
           bottom: 0;
           width: 100%;
-          background-color: #C55394 ;
+          background-color: #E577B5 ;
             height: 6%;
       }
       footer div{
           float: right;
           color: #fff;
           font-size: 13px;
-          padding-top: 1.5%;
+          padding-top: 1%;
+          padding-bottom: 1%;
           padding-right: 10px;
       }
     </style>
@@ -84,7 +101,9 @@
     
 </header>
 <body> 
-
+<div class="en_tete">
+<h1>Un jour, une licorne</h1>
+</div>
 </body>
 <footer>
     <div>
