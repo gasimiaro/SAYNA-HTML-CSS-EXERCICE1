@@ -72,12 +72,44 @@
         padding: 4% 13% 1.5% 13%;
         margin-left: 30%;
       }
+          /* contenu */
+          .contenu{
+              border-radius: 8px;
+              box-shadow: 0px 6px 20px 3px rgba(3, 3, 3, 0.6);
+              width: 70%;
+              margin-left: 15%;
+              font-size: 12px;
+          }
+          .licornes{
+              display: flex;
+              flex-direction: row;
+              border: 1px solid black;
+          }
+          figure{
+              position: relative;
+            border: 2px green solid;
+            margin: 13px;
+            }
+           figcaption{
+            position: absolute;
+            width: 100%;
+            height: 22px;
+            text-align: center;
+            background-color: rgba(3, 3, 3, 0.8);
+            color : white;    
+            bottom: 0; 
+            padding-top:8px ;
+           }
+          figure img{
+          
+            width: 100%;
+            height: auto;
+          }
       footer{
-          position: absolute;
           bottom: 0;
           width: 100%;
           background-color: #E577B5 ;
-            height: 6%;
+            height: 6vh;
       }
       footer div{
           float: right;
@@ -101,9 +133,33 @@
     
 </header>
 <body> 
-<div class="en_tete">
-<h1>Un jour, une licorne</h1>
-</div>
+    <div class="en_tete">
+         <h1>Un jour, une licorne</h1>
+    </div>
+    <div class="contenu">
+        <section id="intro">
+            <h2> 
+              <i class="fa fa-star-o" aria-hidden="true"></i>  Le principe
+            </h2>
+            <div class="lorem">
+               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
+                <br>
+                <p>Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+            
+            </div>
+        </section>
+        <section id="list-licornes">
+            <h2>
+                <i>  Nos licornes</i>
+            </h2>
+            <div class="licornes">
+                <figure><img src="img/unicorns/photo1.jpg" alt="Lulu COnfetty"> <figcaption>Lulu Confetty</figcaption></figure>
+               <figure> <img src="img/unicorns/photo3.jpg" alt="El Ninjacorn"> <figcaption>Ninjacorn</figcaption></figure>
+               <figure><img src="img/unicorns/photo2.jpg" alt="Lapillon Magik"> <figcaption>Lapillon Magik</figcaption></figure>
+                <figure><img src="img/unicorns/photo4.jpg" alt="Sweety Candy"> <figcaption>Sweety Candy</figcaption></figure>
+            </div>
+        </section>
+    </div>
 </body>
 <footer>
     <div>
