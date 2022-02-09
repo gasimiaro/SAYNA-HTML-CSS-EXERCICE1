@@ -5,172 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyUnicorn</title>
-    <style>
-        /*enlever tous les petits marges*/
-        *{
-            border: 1px solid black ;
-            padding: 0;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-
-        html {
-            border: 6px solid green;
-            position: relative;
-        } 
-        header{
-            background-color: #C55394 ;
-            height: 10%;
-        }
-        .box-unicorn{
-            width:15%;
-            display: inline-block;
-            height: 100%;
-        }
-        .box-text-unicorn{
-            position: relative;
-            width: fit-content;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: 30px;
-        }
-        .box-text-unicorn a{
-            text-decoration: none;
-            font-family: 'Courgette', cursive;
-            font-size: 20px;
-            font-style: italic;
-            color: #fff;
-            text-align: center;
-            cursor: pointer;
-        }
-      .titre-header{
-          float:right;
-          height: 100%;
-          font-size: 13px;
-          padding: 16px 15px;
-          margin-right:3px;
-          cursor: pointer;
-      }
-      .titre-header:hover{
-          background-color: #EB43A3;
-          box-shadow: 0px 1px 0px 1px  rgba(197,110,150,0.8);
-
-      }
-      .titre-header a{
-          text-decoration: none;
-          color: #fff;
-      }
-                      /*le contenu commence ici*/
-
-      body{ position: relative;
-        
-          background-image: url(img/background.png);
-      }
-      .en_tete{
-          border: 1px solid black;
-      }
-     .en_tete h1{
-         background-image: url(img/rainbow.png);
-        font-family: 'Courgette', cursive;
-        color: #C55394;
-        font-size: 23px ;
-        font-style: italic;
-        width: fit-content;
-        padding: 4% 13% 1.5% 13%;
-        margin-left: 30%;
-      }
-          /* contenu */
-          .contenu{
-              position: relative;
-              border-radius: 8px;
-              box-shadow: 0px 6px 20px 3px rgba(3, 3, 3, 0.6);
-              width: 70%;
-              margin-left: 15%;
-              padding: 3% 2%;
-              margin-bottom: 3%;
-              font-size: 12px;
-          }
-          .licornes{
-              display: flex;
-              flex-direction: row;
-              border: 1px solid black;
-          }
-          figure{
-              position: relative;
-            border: 2px green solid;
-            margin: 13px;
-            }
-           figcaption{
-            position: absolute;
-            width: 100%;
-            height: 22px;
-            text-align: center;
-            background-color: rgba(3, 3, 3, 0.8);
-            color : white;    
-            bottom: 0; 
-            padding-top:8px ;
-           }
-          figure img{
-            width: 100%;
-            translate: ;          }
-          figure img:hover{
-              width: 103%;
-          }
-       .coo{
-            border: 1px solid green;
-       }
-          .map{
-              display: inline-block;
-              border: 1px solid grey;
-              width: 60%;
-              height: 80px;
-          }
-          .localisation{
-              display: inline-block;
-              width: 30%;
-              border: 1px solid grey;
-          }
-          .sous-titre{
-            font-family: 'Courgette', cursive;
-            color: #EB43A3;
-          }
-      footer{
-          position: absolute;
-          width: 100%;
-          background-color: #E577B5;
-            height: 6vh;
-bottom: 0;
-      }
-      footer div{
-          float: right;
-          color: #fff;
-          font-size: 13px;
-          padding-top: 1%;
-          padding-bottom: 1%;
-          padding-right: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<header >
-    <div class="box-unicorn ">
-        <div class="box-text-unicorn">
-            <a href="index.html">MyUnicorn</a>
-        </div>
-    </div>
-    <div class="titre-header"><a href="">Nous trouver</a></div>  
-    <div class="titre-header"><a href="#list-licornes">Nos licornes</a></div>
-    <div class="titre-header" style="background-color:#EB43A3 ;"><a href="#intro"> Le principe</a></div>
-    
-</header>
 <body> 
+    <header >
+        <div class="box-unicorn ">
+            <div class="box-text-unicorn">
+                <a href="index.html">MyUnicorn</a>
+            </div>
+        </div>
+        <div class="titre-header"><a href="#coordonee">Nous trouver</a></div>  
+        <div class="titre-header"><a href="#list-licornes">Nos licornes</a></div>
+        <div class="titre-header"><a href="#intro"> Le principe</a></div>
+        
+    </header>
+ <div id="page">
     <div class="en_tete">
          <h1>Un jour, une licorne</h1>
     </div>
     <div class="contenu">
         <section id="intro">
             <h2> 
-              <i class="fa fa-star-o" aria-hidden="true"></i>  Le principe
+              <i class="fa fa-star-o" aria-hidden="true" ></i>Le principe
             </h2>
             <div class="lorem">
                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
@@ -205,14 +61,15 @@ bottom: 0;
                 01.22.45.67.90</p><br><br>
                 <span class="sous-titre">Newsletter</span><br><br>
                 <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
-                <form action="" method="post">
-                    <input type="email" name="mail" id="mail" placeholder="votre@email.mg"> <br>
+                <form action="newsletter.php" method="post">
+                    <input type="email" name="mail" id="mail" placeholder="votre@email.mg" required> <br>
                     <input type="submit" value="Valider" >
                 </form>
             </div>
         </div>
         </section>
     </div>
+</div>
     <footer>
         <div>
              2016 &copy; WebForce3
