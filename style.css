@@ -3,26 +3,28 @@
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
-}
+  }
 
-
-
+/* couleur du menu */
 header{
     background-color: #C55394 ;
     height: 10%;
-}
+  }
+
 .box-unicorn{
     width:15%;
     display: inline-block;
     height: 100%;
-}
+  }
+
 .box-text-unicorn{
     position: relative;
     width: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 30px;
-}
+  }
+
 .box-text-unicorn a{
     text-decoration: none;
     font-family: 'Courgette', cursive;
@@ -31,7 +33,8 @@ header{
     color: #fff;
     text-align: center;
     cursor: pointer;
-}
+  }
+
 .titre-header{
   float:right;
   height: 100%;
@@ -39,37 +42,36 @@ header{
   padding: 16px 15px;
   margin-right:3px;
   cursor: pointer;
-}
+  }
+
 .titre-header:hover{
   background-color: #EB43A3;
-  box-shadow: 0px 1px 0px 1px  rgba(197,110,150,0.8);
+  }
 
-}
 .titre-header a{
   text-decoration: none;
   color: #fff;
-}
-              /*le contenu commence ici*/
+  }
+              /*le corps du site commence ici*/
 
 #page{     
   background-image: url(img/background.png);
-}
-.en_tete{
-  border: 1px solid black;
-}
+  }
+
+/* titre avec fond arc en ciel */
 .en_tete h1{
- background-image: url(img/rainbow.png);
- background-repeat: no-repeat;
- background-size: cover;
-font-family: 'Courgette', cursive;
-color: #C55394;
-font-size: 23px ;
-font-style: italic;
-width: 20%;
-padding: 4% 13% 1.5% 13%;
-margin-left: 30%;
-}
-  /* contenu */
+    background-image: url(img/rainbow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courgette', cursive;
+    color: #C55394;
+    font-size: 23px ;
+    font-style: italic;
+    width: 20%;
+    padding: 4% 13% 1.5% 13%;
+    margin-left: 30%;
+  }
+  /* contenu avec effet flottant */
   .contenu{
       position: relative;
       border-radius: 8px;
@@ -80,27 +82,30 @@ margin-left: 30%;
       margin-bottom: 3%;
       font-size: 12px;
   }
-  section{
+  /* espacement entre chaque section */
+section{
       margin-top: 3%;
       margin-bottom: 3%;
   }
+
   .lorem{
     margin-top: 15px;
   }
-  .licornes{
+
+  /* mise en lignes des licornes */
+.licornes{
       display: flex;
       flex-direction: row;
       margin-top: 15px;
-      border: 1px solid black;
   }
-  figure{
-      position: relative;
-    border: 2px green solid;
-    margin: 13px;
-    transition: 2s ease-in-out;
 
+figure{
+      position: relative;
+      margin: 13px;
+      transition: 2s ease-in-out;         /*temps d'agrandissement de l'image */
     }
-   figcaption{
+
+figcaption{
     position: absolute;
     width: 100%;
     height: 22px;
@@ -110,31 +115,32 @@ margin-left: 30%;
     bottom: 0; 
     padding-top:8px ;
    }
-  figure img{
+
+figure img{
     width: 100%;
-              }
-  figure:hover{
+   }
+/* agrandissement de l'image */
+figure:hover{
       transform: scale(1.097);
   }
+
 .coo{
    position: relative;
    margin-top: 15px;
-    border: 1px solid green;
-}
-  .map{
-      display: inline-block;
-      border: 1px solid grey;
-      width: 60%;
-      height: 400px;
   }
+/* map et localisation */
+  .map{
+      display: inline-block;    
+  }
+
   .localisation{
       position: absolute;
       top: 0;
       padding-left: 2%;
       display: inline-block;
       width: 30%;
-      border: 1px solid grey;
   }
+
   .sous-titre,h2{
     font-family: 'Courgette', cursive;
     font-style: italic;
@@ -143,11 +149,13 @@ margin-left: 30%;
   input[type= submit]{
       margin-top: 7px;
       border-radius: 3px;
-      padding: 3px;
+      padding: 8px;
       color: #fff;
       background-color: #C55394;
+      border: none;
       cursor: pointer;
   }
+  /* en bas de page */
 footer{
   position: absolute;
   width: 100%;
